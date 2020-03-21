@@ -64,5 +64,5 @@ app.get('/bad',(req,res)=>{
 });
 
 app.listen((process.env.PORT || 3000),()=>{
-    console.log('Server is up with  port: '+(process.env.port || 3000));
+    console.log('Server is up with  port: '+(process.env.PORT || 3000));
 });
