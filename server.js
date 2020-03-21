@@ -22,9 +22,9 @@ app.use((req,res,next)=>{
     next();
 });
 
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
 res.render('maintenance.hbs');
-});
+});*/
 
 hbs.registerHelper('getCurrentYear',()=>{
 return new Date().getFullYear()
@@ -36,7 +36,7 @@ return text.toUpperCase();
 
 
 
-    app.get('/home',(req,res)=>{
+    app.get('/',(req,res)=>{
         res.render('home.hbs',{
             pageTitle:'Home Page',
             welcomeMessage:'Welcome to my new node website'
