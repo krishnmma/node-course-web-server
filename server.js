@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 var app = express();
 
 hbs.registerPartials(__dirname+'/views/partials');
-app.set('view engine','.hbs');
+app.set('view engine','hbs');
 app.use(express.static(__dirname+'/public'));
 
 
@@ -37,7 +37,7 @@ return text.toUpperCase();
 
 
     app.get('/',(req,res)=>{
-        res.render('home.hbs',{
+        res.render('main.hbs',{
             pageTitle:'Home Page',
             welcomeMessage:'Welcome to my new node website'
             //currentYear:new Date().getFullYear()
