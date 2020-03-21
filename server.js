@@ -5,9 +5,9 @@ const port = process.env.PORT || 3000;
 //const host = '0.0.0.0';
 var app = express();
 
-hbs.registerPartials(__dirname+'/Views/Partials');
+hbs.registerPartials(__dirname+'/views/partials');
 app.set('view engine','hbs');
-app.use(express.static(__dirname+'/Public'));
+app.use(express.static(__dirname+'/public'));
 
 
 app.use((req,res,next)=>{
